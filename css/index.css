@@ -1,5 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 .iconoRRSS{
     width: 20px;
     size: 20px;
 }
 
+ul{
+    list-style-type: none;
+}
