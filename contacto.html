@@ -10,9 +10,9 @@
 
     <body>
         
-        <header> <!--Deberia estar en todas las paginas-->
-            <div class="imgInicio">
-                <a href="index.html" target="_self"><img src="" alt=""></a> <!--imagen que redirecciona al inicio de la pagina-->
+        <header> 
+            <div class="homeButton">
+                <a href="index.html" target="_self">Rincón Lúdico</a> 
             </div>
             <nav>
                 <ul>
@@ -43,57 +43,57 @@
 
         <main>
             <section>
-            <h3>Preguntas Frecuentes</h3>
+            <h2 class="h2Titulo">Preguntas Frecuentes</h2>
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum aut voluptatibus amet tenetur architecto.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum aut voluptatibus amet tenetur architecto.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum aut voluptatibus amet tenetur architecto.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum aut voluptatibus amet tenetur architecto.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum aut voluptatibus amet tenetur architecto.</li>
+                <li><h3 class="faqTitulo"><b>¿Todo lo que está en la web se encuentra disponible?</b></h3><br>
+                    <p>Si! Salvo que diga <b>Sin Stock</b>, en ese caso tendremos que hablar con el goblin para que lo reponga.</p></li>
+
+                <li><h3 class="faqTitulo"><b>¿Cuánto tarda en llegar un pedido?</b></h3><br>
+                    <p>El tiempo de entrega dependerá del tipo de envío seleccionado y del lugar donde te encuentres. Por lo general nuestros goblins van montados en burros, por lo que suelen tardar entre 1 y 5 días hábiles desde el momento del despacho. Ante cualquier duda contactanos por la orbe mágica o a través de nuestras redes sociales.<p></li>
+
+                <li><h3 class="faqTitulo"><b>¿Cuál es el horario de atención?</b></h3><br>
+                    <p>Podés encontrarnos en el local de Lunes a Viernes entre las 10:00 am y las 20:00 pm para que puedas retirar cualquiera de los productos que compraste, los goblins que atienden te van a asistir.</p></li>
+
+                <li><h3 class="faqTitulo"><b>¿Hacen reservas o preventas de novedades?</b></h3><br>
+                    <p>Claro! Revisá nuestras redes sociales que es donde cargamos la información de las preventas.</p></li>
+
+                <li><h3 class="faqTitulo"><b>¿Qué pasa si me llega un producto con piezas faltantes o dañadas?</b></h3><br>
+                    <p>Acercate o envialo a nuestro local con el ticket de compra para que podamos reponer los componentes faltantes o dañados, los goblins no se equivocan dos veces.</p></li>
             </ul>
             </section>
-            <img src="#" alt="#"> <!--imagen piola de logo-->
-            <section id="sectionFormulario">
+
+            <h2 class="h2Titulo">Contactanos!</h2>
+            <section class="formularioContacto">
                 <form action="https://formspree.io/f/xpqkjrrl" method="POST" enctype="multipart/form-data">
-                    <label>Nombre completo:</label>
+                    <label><b>Nombre Completo:</b></label>
                     <input type="text" name="nombre" id="nombre" placeholder="Caleb Widogast"><br>
                     
-                    <label>Email:</label>
+                    <label><b>Email:</b></label>
                     <input type="text" name="email" id="email" placeholder="bolaDeFuego@gmail.com"><br>
                     
-                    <label>Mensaje:</label>
+                    <label><b>Mensaje:</b></label>
                     <input type="text" name="mensaje" id="mensaje" placeholder="I cast message."><br>
 
                     <input type="submit" value="Enviar">
                 </form>
             </section>
-            <div>
+            <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6443.605631112382!2d-58.38350567340124!3d-34.60466265024534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1777589164064!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
             </div>
         </main><br>
 
         <footer>
-            <div> <!--logo + mail + numero + lugar-->
-                <img src="#" alt="#">
+            <div class="divContacto"> 
                 <p>CABA, Buenos Aires 
                 <a href="mailto:theoluis44@proton.me">theoluis44@proton.me</a>
                 <a href="tel:+1112345678">+1112345678</a></p>
             </div><br>
 
-            <div> <!--Redes, agregar logos de twitter e IG--> 
+            <div class="divRedes">  
                 <h4>Nuestras Redes</h4>
-                <a href="https://x.com/Skinox44"><img src="#" alt="Logo de Twitter" class="iconoRRSS"></a>
-                <a href="https://www.instagram.com/skinox44/"><img src="images/instagramLogo.svg" alt="Logo de Instagram" class="iconoRRSS"></a>
+                <a href="https://x.com/Skinox44"><img src="images/logos/xLogo.svg" alt="Logo de Twitter" class="iconoRRSS"></a>
+                <a href="https://www.instagram.com/skinox44/"><img src="images/logos/instagramLogo.svg" alt="Logo de Instagram" class="iconoRRSS"></a>
             </div>
-
-            <!--<ul>
-                <li>
-                    <a href="contacto.html" target="_self">Contacto</a>
-                </li>
-                <li>
-                    <a href="faq.html" target="_self">Preguntas Frecuentes</a>
-                </li>
-            </ul>-->
         </footer>
     </body>
 </html>
