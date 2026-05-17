@@ -11,7 +11,7 @@
     <body>
         
         <header> 
-            <div class="homeButton">
+            <div>
                 <a href="index.html" target="_self" class="homeButton">Rincón Lúdico</a> 
             </div>
             <nav>
@@ -66,13 +66,13 @@
                 <h2 class="h2Titulo">Contactanos!</h2>
                 <form action="https://formspree.io/f/xpqkjrrl" method="POST" enctype="multipart/form-data">
                     <label><b>Nombre Completo:</b></label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Caleb Widogast"><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Caleb Widogast" required><br>
                     
                     <label><b>Email:</b></label>
-                    <input type="text" name="email" id="email" placeholder="bolaDeFuego@gmail.com"><br>
+                    <input type="text" name="email" id="email" placeholder="bolaDeFuego@gmail.com" required><br>
                     
                     <label><b>Mensaje:</b></label>
-                    <input type="text" name="mensaje" id="mensaje" placeholder="I cast message."><br>
+                    <input type="text" name="mensaje" id="mensaje" placeholder="I cast message." maxlength="400" required><br>
 
                     <input type="submit" value="Enviar">
                 </form>
@@ -86,6 +86,7 @@
 
         <footer>
             <div class="divContacto"> 
+                <p><b>Visitanos!</b></p>
                 <p>🗺️ CABA, Buenos Aires <br>
                 <a href="mailto:theoluis44@proton.me">📧 theoluis44@proton.me</a> <br>
                 <a href="tel:+1112345678">📱 +1112345678</a></p>
@@ -96,6 +97,8 @@
                 <a href="https://x.com/Skinox44"><img src="images/logos/xLogo.svg" alt="Logo de Twitter" class="iconoRRSS"></a>
                 <a href="https://www.instagram.com/skinox44/"><img src="images/logos/instagramLogo.svg" alt="Logo de Instagram" class="iconoRRSS"></a>
             </div>
+
+            <div class="divDerechos"><p>Copyright Theo Luis - 2026 | Todos los derechos reservados.</p></div>
         </footer>
     </body>
 </html>
