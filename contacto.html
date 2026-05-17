@@ -6,13 +6,14 @@
         <link rel="stylesheet" href="css/contacto.css">
 
         <title>Contactanos!</title>
+        <link rel="icon" type="image/x-icon" href="images/logos/d20.png">
     </head>
 
     <body>
         
         <header> 
             <div>
-                <a href="index.html" target="_self" class="homeButton">Rincón Lúdico</a> 
+                <a href="index.html" target="_self" class="homeBoton">Rincón Lúdico</a> 
             </div>
             <nav>
                 <ul>
@@ -64,17 +65,17 @@
 
             <section class="formularioContacto">
                 <h2 class="h2Titulo">Contactanos!</h2>
-                <form action="https://formspree.io/f/xpqkjrrl" method="POST" enctype="multipart/form-data">
+                <form action="https://formspree.io/f/xpqkjrrl" method="POST" enctype="multipart/form-data" class="">
                     <label><b>Nombre Completo:</b></label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Caleb Widogast" required><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Caleb Widogast" required class=""><br>
                     
                     <label><b>Email:</b></label>
-                    <input type="text" name="email" id="email" placeholder="bolaDeFuego@gmail.com" required><br>
+                    <input type="email" name="email" id="email" placeholder="bolaDeFuego@gmail.com" required class=""><br>
                     
                     <label><b>Mensaje:</b></label>
-                    <input type="text" name="mensaje" id="mensaje" placeholder="I cast message." maxlength="400" required><br>
+                    <input type="textarea" name="mensaje" id="mensaje" placeholder="I cast message." maxlength="400" required><br>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="botonEnviar">
                 </form>
             </section>
 
