@@ -1,13 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English:ital@0;1&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
-.iconoRRSS{
-    width: 20px;
-    size: 20px;
+body{
+    background-color: #1E104E;
+    color: #EDE8F5;
+    font-family: 'IM Fell English', Georgia, serif;
 }
 
-ul{
+/* ---- HEADER ---- */
+
+header{
+    background-color: #452E5A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 3px solid #FF653F;
+    position: sticky; /*quiero que el nav se mantenga en el borde superior de la pantalla siempre*/
+    top: 0;
+    z-index:100; /*es para que quede por encima del resto de atributos del body*/
+}
+
+.homeBoton{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #FFC85C;
+    text-decoration: none;
+}
+
+.homeBoton:hover{
+    color: #FF653F; /*cuando paso por encima del botón rincón lúdico cambia de color, al igual que los botones del nav*/
+}
+
+/* ---- NAV ---- */
+
+nav ul{
     list-style-type: none;
+    display: flex;
+}
+
+.botonNav{
+    font-family: 'Cinzel', serif;
+    color: #EDE8F5;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.botonNav:hover{
+    background-color: #FF653F;
+    color: white;
+}
+
+/* ---- VIDEO ----*/
+
+.containerVideo{
+    position: relative;
+}
+
+video{
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.textoVideo{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textoVideo h1{
+    font-family: 'Cinzel', serif;
+    color: #FF653F;
+    font-size: 3rem;
+}
+
+/* ---- MAIN ---- */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ---- SECCIONES DE PRODUCTOS ---- */
+
+.sectionProductos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.sectionProductos h3{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFC85C;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #FF653F;
+    grid-column: 1 / -1;
+}
+
+/* ---- PRODUCTOS ---- */
+
+.divProducto{
+    background-color: #2a1a5e;
+    border: 1px solid #452E5A;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.divProducto img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+}
+
+.divProducto:hover{
+    background-color: #2a1a5e;
+    border: 1px solid #452E5A;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.05);
+}
+
+/* ---- SECCIÓN OPINIONES ---- */
+
+.sectionOpiniones{
+    background: linear-gradient(180deg, #452E5A, #1E104E);
+    padding: 24px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.sectionOpiniones h3{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFC85C;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #FF653F;
+    grid-column: 1 / -1;
+    margin-bottom: 8px;
+}
+
+.cajaOpinion{
+    background-color: #2a1a5e;
+    border: 1px solid #452E5A;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.resenia{
+    color: #EDE8F5;
+    line-height: 1.6;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.autorResenia{
+    font-family: 'Cinzel', serif;
+    color: #FFC85C;
+    font-size: 0.9rem;
+    border-top: 1px solid #452E5A;
+    padding-top: 12px;
+}
+
+/* ---- FOOTER ---- */
+
+footer{
+    background-color: #452E5A;
+    border-top: 3px solid #FF653F;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.divContacto p{
+    color: #EDE8F5;
+    line-height: 1.8;
+}
+
+.divContacto a{
+    color: #FFC85C;
+    text-decoration: none;
+}
+
+.divContacto a:hover{
+    color: #FF653F;
+}
+
+.divRedes h4{
+    font-family: 'Cinzel', serif;
+    color: #FFC85C;
+    margin-bottom: 8px;
+}
+
+.divDerechos p{
+    color: #EDE8F5;
+    font-size: 1rem;
+}
+
+.iconoRRSS{
+    width: 20px;
+    height: 20px;
 }
