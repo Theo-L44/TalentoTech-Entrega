@@ -214,3 +214,80 @@ footer{
     width: 20px;
     height: 20px;
 }
+
+/* media queries*/
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+    }
+ 
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+ 
+    .botonNav {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+ 
+    main {
+        padding: 20px 16px;
+        gap: 24px;
+    }
+ 
+    .formularioContacto {
+        padding: 16px;
+    }
+ 
+    .botonEnviar {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    .mapa {
+        height: 260px;
+    }
+ 
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+ 
+/* ---- MEDIA QUERIES ---- */
+ 
+/* Tablets */
+@media (max-width: 900px) {
+ 
+    main {
+        padding: 20px 16px;
+        gap: 24px;
+    }
+ 
+    .formularioContacto {
+        padding: 16px;
+    }
+ 
+    .mapa {
+        height: 260px;
+    }
+ 
+}
+ 
+/* Celulares */
+@media (max-width: 480px) {
+ 
+    #nombre, #email, #mensaje {
+        font-size: 14px;
+    }
+ 
+    .botonEnviar {
+        width: 100%;
+    }
+ 
+}
