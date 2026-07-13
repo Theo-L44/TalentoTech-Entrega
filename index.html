@@ -164,6 +164,31 @@
                     <p class="precio">💲</p>
                 </div> 
             </section> <br>
+            
+            <section class="sectionCompras">
+                <h3>¡Llená tu carrito con una galaxia de productos!</h3>
+                <div class="cajaProductos">
+                    <h4>Productos en stock</h4>
+                    <ul id="listaProductos">
+                    </ul>
+                </div>
+                <aside>
+                    <h4>Tu carrito (<span id="cantidadCarrito">0</span>)</h4>
+                    <ul id="itemsCarrito">
+                    </ul>
+
+                    <div class="carritoTotal">
+                        <span>Total:</span>
+                        <strong id="precioFinal">$0</strong>
+                    </div>
+
+                    <div class="carritoAcciones">
+                        <button id="botonVaciar">Vaciar</button>
+                        <button id="botonPagar">Tarjetear</button>
+                    </div>
+                    <p>Los pagos van al más allá para ser procesados en un futuro lejano.</p>
+                </aside>
+            </section><br>
 
             <section class="sectionOpiniones">
                 <h3>Opiniones del más allá</h3>
@@ -203,6 +228,7 @@
 
             <div class="divDerechos"><p>Copyright Theo Luis - 2026 | Todos los derechos reservados.</p></div>
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="javascript/carrito.js"></script>
     </body>
 </html>
