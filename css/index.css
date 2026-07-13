@@ -98,7 +98,7 @@ main{
 
 .sectionProductos{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
 }
 
@@ -134,15 +134,213 @@ main{
 }
 
 .divProducto:hover{
+    transform: scale(1.05);
+}
+
+/* ---- SECCIÓN CARRITO ---- */
+ 
+.sectionCompras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+ 
+.sectionCompras h3{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFC85C;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #FF653F;
+    margin-bottom: 16px;
+    width: 100%;
+}
+ 
+.cajaProductos{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.cajaProductos h4{
+    font-family: 'Cinzel', serif;
+    color: #FFC85C;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+ 
+#listaProductos{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+aside{
+    flex: 1;
     background-color: #2a1a5e;
     border: 1px solid #452E5A;
     border-radius: 8px;
-    overflow: hidden;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transform: scale(1.05);
+    gap: 16px;
+    position: sticky;
+    top: 80px;
 }
+ 
+aside h4{
+    font-family: 'Cinzel', serif;
+    color: #FFC85C;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #FF653F;
+    padding-bottom: 8px;
+}
+ 
+#itemsCarrito{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 40px;
+}
+ 
+.carritoTotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #452E5A;
+    padding-top: 12px;
+    color: #EDE8F5;
+}
+ 
+.carritoTotal strong{
+    color: #FFC85C;
+    font-size: 1.1rem;
+}
+ 
+.carritoAcciones{
+    display: flex;
+    gap: 12px;
+}
+ 
+#botonVaciar{
+    flex: 1;
+    padding: 10px;
+    background-color: #452E5A;
+    color: #EDE8F5;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+}
+ 
+#botonVaciar:hover{
+    background-color: #5a3d6e;
+}
+ 
+#botonPagar{
+    flex: 1;
+    padding: 10px;
+    background-color: #FF653F;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+}
+ 
+#botonPagar:hover{
+    background-color: #FFC85C;
+    color: #1E104E;
+}
+ 
+aside p{
+    color: #a094c2;
+    font-size: 0.8rem;
+}
+
+/* ---- ITEMS DE LA LISTA DE PRODUCTOS ---- */
+
+.itemProducto {
+    background-color: #2a1a5e;
+    border: 1px solid #452E5A;
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nombreProducto {
+    flex-grow: 1;
+    color: #EDE8F5;
+}
+
+.precioProducto {
+    color: #FFC85C;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+}
+
+.agregarBoton {
+    background-color: #FF653F;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+}
+
+.agregarBoton:hover {
+    background-color: #FFC85C;
+    color: #1E104E;
+}
+
+/* ---- ITEMS DEL CARRITO ---- */
+
+.itemCarrito {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #EDE8F5;
+    font-size: 0.9rem;
+}
+
+.itemCarrito span:first-child {
+    flex-grow: 1;
+}
+
+.precioCarrito {
+    color: #FFC85C;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+}
+
+.quitarBoton {
+    background: none;
+    border: none;
+    color: #FF653F;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.quitarBoton:hover {
+    color: #FFC85C;
+}
+
+.carritoVacio {
+    color: #a094c2;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
 
 /* ---- SECCIÓN OPINIONES ---- */
 
@@ -233,4 +431,32 @@ footer{
 .iconoRRSS{
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 900px) {
+ 
+    
+    .sectionCompras {
+        flex-direction: column;
+    }
+
+    aside {
+        position: static;
+    }
+
+    .textoVideo h1 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
 }
